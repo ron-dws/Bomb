@@ -1,0 +1,53 @@
+Header (full)
+   -Photo
+
+Nav (align:center)
+   #MENU #CATERING #ABOUT US #CONTACT
+
+BODY (full)
+   Section 1
+      -1 Layer (1 row, 1 column)
+      ->Intro{
+             #hotdog img(graphic)
+             #H1 title
+             #Button ->redirect to the Menu Page
+              }
+   Section 2
+       -3 Articles (3 rowS, 2 columns)
+       ->Article 1(2 columns)
+           -right (clmn_1 food description{
+                                           #h3 title
+                                           #p  short description
+                                           })
+           -Left (clmn_2 food picture)
+
+       ->Article 2(2 columns)
+           -right (clmn_1 food picture)
+           -Left  (clmn_2 food description{
+                                           #h3 title
+                                           #p  short description
+                                           })
+
+       ->Article 3(2 columns)
+           -right (clmn_1 food description{
+                                           #h3 title
+                                           #p  short description
+                                           })
+           -Left (clmn_2 food picture)
+
+FOOTER (full)
+   -footer {
+             -left {copyright}
+             -right {address, phone #, contact Us (link -> redirect to contact_us page)}
+           }
+
+
+Must Have
+ -Images
+   ->header
+   ->food 1 
+   ->food 2
+   ->food 3 
+
+ -Content
+   ->Short description (food1,food2, food3)         
