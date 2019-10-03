@@ -85,7 +85,9 @@ h2::before {
     color:rgba(67, 67, 126, 0.99);
 }
 
-
+.menu_landing_page.article_2_2{
+    display:none;
+}
 .column {
     float: left;
     width: 50%;
@@ -165,6 +167,14 @@ font-size: 12px;
     /*row has only one column now*/
     .column {
         width: 100%;
+    }
+
+
+    .menu_landing_page.article_2{
+        display:none;
+    }
+    .menu_landing_page.article_2_2{
+        display:block;
     }
 
     /*center footer elements*/
