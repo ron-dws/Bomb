@@ -119,6 +119,14 @@ font-size: 12px;
 
 /*for screen less than 600 px = mobile devices */
 @media screen and (max-width: 600px) {
+    /*Improve header & h1 size for better UX on mobile*/
+    header{
+        height: 200px;
+    }
+
+    #section1 h1{
+        font-size: 25px;
+    }
 
     /*Modify how the nav will look like & on hover*/
     nav{
