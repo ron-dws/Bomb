@@ -31,6 +31,11 @@ a{
     color:black;
 }
 
+nav ul li a:hover{
+    color: red;
+    transition: .6s
+    }
+
 /*content*/
 #section1{
     text-align: center;
@@ -160,7 +165,6 @@ font-size: 12px;
         background-color: #555;
       }
     nav ul li:hover a:not(.active) {
-    background-color: #555;
     color: white;
     }
 
