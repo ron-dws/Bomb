@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/hotdog_icon.png">
+    <link rel="stylesheet" href="css/style_punk_api.css">
+    <title>load beers from API</title>
+</head>  
+<body>
+
+    <section id="section1">
+            <h1>Punk API</h1>
+            <button id="btn_load_beers" onclick="load_beers()">Load Some Beers !</button>
+			<p id="display_here"></p>
+    </section>
+	<section id="the_beers">
+	  
+	<section>
+	
+	<script>
+	 //function test
+	  let load_beers = () => { 
+	  
+	 //Request the file from the server & Fetch Data from the JSON file
+	 var xmlhttp = new XMLHttpRequest();
+		 xmlhttp.onreadystatechange = function() {
+		  if (this.readyState == 4 && this.status == 200) {
+		    var theBeers = JSON.parse(this.responseText);
+				var str = '<ul style="list-style-type: none;">'
+                for(var i = 0; i < theBeers.length; i++){
+				  str += '<li>The beer name is: <b style="color:red;"> '+ theBeers[i].name + '</b></li>';
+				         
+				  console.log(theBeers[i]);
+				}; 
+
+				str += '</ul>';
+				document.getElementById("display_here").innerHTML = str;
+				
+				}
+		  }
+		
+		xmlhttp.open("GET", "https://api.punkapi.com/v2/beers", true);
+        xmlhttp.send();
+	 }
+	  
+	
+	</script>
+</body>
+</html>
