@@ -1,2 +1,2 @@
-# Dynamit
-Front end development work with Dynamit
+# Bomb
+Front end development work with Bomb
